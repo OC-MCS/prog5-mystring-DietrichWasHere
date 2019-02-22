@@ -22,7 +22,7 @@ class MyString
 };
 
 // use << operator to displat MyString's c-string
-ostream & operator << (ostream &strm, const MyString &out)
+ostream & operator << (ostream &strm, MyString &out)
 {
 	strm << out.c_str();
 	return strm;

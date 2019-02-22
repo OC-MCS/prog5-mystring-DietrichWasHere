@@ -24,11 +24,14 @@ MyString::~MyString()
 	delete[] str;
 }
 // set one MyString to the value of another
-void MyString::operator = (const MyString &nStr)
+void MyString::operator = (const MyString &other)
 {
-	delete[] str;
-	str = new char[strlen(nStr.str) + 1];
-	strcpy_s(str, strlen(nStr.str), nStr.str);
+	if (this != &other)
+	{
+		delete[] str;
+		str = new char[strlen(other.str) + 1];
+		strcpy_s(str, strlen(other.str), other.str);
+	}
 }
 // concatenate two MyStrings, return the new MySttring
 MyString MyString::operator + (const MyString & other)
