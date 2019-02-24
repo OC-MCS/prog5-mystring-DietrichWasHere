@@ -1,11 +1,14 @@
 #include "MyString.h"
 #include <cstring>
+using namespace std;
 // MyString implementation file
 // default constructor
+
 MyString::MyString()
 {
 	str = nullptr;
 }
+
 // Constructo that recieves c-string (char array)
 MyString::MyString(char *nStr)
 {
