@@ -21,9 +21,4 @@ class MyString
 		const char * c_str();
 };
 
-// use << operator to displat MyString's c-string
-ostream & operator << (ostream &strm, MyString &out)
-{
-	strm << out.c_str();
-	return strm;
-}
+ostream & operator << (ostream &strm, MyString &out);

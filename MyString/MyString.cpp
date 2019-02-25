@@ -57,3 +57,9 @@ const char * MyString::c_str()
 {
 	return str;
 }
+// use << operator to displat MyString's c-string
+ostream & operator << (ostream &strm, MyString &out)
+{
+	strm << out.c_str();
+	return strm;
+}
