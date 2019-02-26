@@ -43,7 +43,7 @@ MyString MyString::operator + (const MyString & other)
 	if ((str != nullptr) && (other.str != nullptr))
 	{
 		nStr.str = new char[strlen(str) + strlen(other.str) + 1];
-		strcpy_s(nStr.str, strlen(str) + strlen(other.str) + 1, str);
+		strcpy_s(nStr.str, strlen(str) + 1, str);
 		strcat_s(nStr.str, strlen(str) + strlen(other.str) + 1, other.str);
 	}
 	else if (str == nullptr)

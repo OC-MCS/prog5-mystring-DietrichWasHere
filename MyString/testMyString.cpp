@@ -17,7 +17,7 @@ int main()
 	s2 = s3;
 	cout << s2 << endl;
 	s1 = s2 + s3;
-	cout << s3 << endl;
+	cout << s1 << endl;
 	MyString s4;
 	s1 = s2 + s4;
 	cout << s1;
