@@ -12,13 +12,13 @@ class MyString
 		char * str;
 	public:
 		MyString();
-		MyString(char * );
+		MyString(const char * );
 		MyString(const MyString&);
 		~MyString();
 		void operator = (const MyString &);
 		MyString operator + (const MyString &);
 		bool operator == (const MyString &);
-		const char * c_str();
+		char * c_str() const;
 };
 
-ostream & operator << (ostream &strm, MyString &out);
+ostream & operator << (ostream &strm, const MyString &out);
