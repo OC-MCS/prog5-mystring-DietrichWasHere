@@ -15,7 +15,7 @@ class MyString
 		MyString(const char * );
 		MyString(const MyString&);
 		~MyString();
-		void operator = (const MyString &);
+		MyString operator = (const MyString &);
 		MyString operator + (const MyString &);
 		bool operator == (const MyString &);
 		char * c_str() const;
