@@ -50,7 +50,7 @@ MyString MyString::operator = (const MyString &other)
 		str = new char[strlen(other.str) + 1];
 		strcpy_s(str, strlen(other.str) + 1, other.str);
 	}
-	else str = nullptr;
+	else if (other.str == nullptr) str = nullptr;
 	cout << "overloaded equal - end" << endl;
 	return other;
 }
