@@ -51,6 +51,7 @@ int main()
 	test1(s1);
 	s1 = s5 + s2;
 	test1(s1);
+	test1(s2);
 }
 
 // test for use of mystring as parameter
